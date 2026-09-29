@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WILLYZINHO NEWS — Fútbol de Salón desde la cancha hasta la historia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/theme-light.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ TICKER EN VIVO ============ -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-live-dot"></span>EN VIVO · PANTERA FS 4 – 3 HALCONES <span class="muted">40' FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">COPA METROPOLITANA <span class="muted">· CUARTOS DE FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">PRÓXIMO PARTIDO <span class="muted">VIE 20:30 · RAYO NEGRO VS FÉNIX FS</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">FICHAJE <span class="muted">TITO SUÁREZ FIRMA CON RAYO NEGRO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">LIGA URBANA DE FÚTBOL DE SALÓN <span class="muted">· JORNADA 12 EN CURSO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item"><span class="ticker-live-dot"></span>EN VIVO · PANTERA FS 4 – 3 HALCONES <span class="muted">40' FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">COPA METROPOLITANA <span class="muted">· CUARTOS DE FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">PRÓXIMO PARTIDO <span class="muted">VIE 20:30 · RAYO NEGRO VS FÉNIX FS</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">FICHAJE <span class="muted">TITO SUÁREZ FIRMA CON RAYO NEGRO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">LIGA URBANA DE FÚTBOL DE SALÓN <span class="muted">· JORNADA 12 EN CURSO</span></span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-icon"><img src="assets/img/logo-wz7.png" alt="WillyzinhoZ7 logo"></div>
+      <div class="brand-sub">
+        <div class="name-row"><div class="brand-dot"></div><b>WILLYZINHO NEWS</b></div>
+        <span>FUTSAL · TORNEOS · JUGADORES · HISTORIAS</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="envivo.html">En Vivo</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="destacados.html">Destacados</a></li>
+        <li><a href="torneos.html">Torneos</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="discipline-toggle">
+        <a href="index.html" class="disc-opt">FUTSAL</a>
+        <a href="futbol-de-salon.html" class="disc-opt is-active">FÚTBOL DE SALÓN</a>
+      </div>
+      <div class="icon-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="icon-btn menu-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="envivo.html">En Vivo</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="destacados.html">Destacados</a></li>
+    <li><a href="torneos.html">Torneos</a></li>
+    <li><a href="favoritos.html">Favoritos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <div class="mobile-nav-disc">
+    <a href="index.html" class="disc-opt">FUTSAL</a>
+    <a href="futbol-de-salon.html" class="disc-opt is-active">FÚTBOL DE SALÓN</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<div class="hero" id="inicio">
+  <div class="hero-mark gold-text">40'</div>
+  <div class="hero-media-full">
+    <img src="assets/img/stadium.svg" alt="Jugada de fútbol de salón en cancha techada">
+    <div class="hero-scoreboard">
+      <div class="clock">40' · FINAL</div>
+      <div class="score display">PANTERA FS 4 — 3 HALCONES</div>
+    </div>
+    <div class="hero-chips">
+      <div class="hero-chip"><b>07</b><span>TORNEOS AL AÑO</span></div>
+      <div class="hero-chip"><b>FÚTBOL DE SALÓN</b><span>DISCIPLINA</span></div>
+      <div class="hero-chip"><b>BOGOTÁ</b><span>SEDE PRINCIPAL</span></div>
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-tag-row"><div class="bar"></div><span>MEDIO OFICIAL DEL FÚTBOL DE SALÓN URBANO</span></div>
+      <h1 class="display">WILLYZINHO NEWS</h1>
+      <div class="sub">FÚTBOL DE SALÓN · TORNEOS · JUGADORES · HISTORIAS</div>
+      <p>El fútbol de salón desde la cancha hasta la historia. Cobertura de torneos, jugadores y equipos que están construyendo la cultura del fútbol de salón en Bogotá.</p>
+      <div class="hero-actions">
+        <button class="btn-gold">Explorar noticias</button>
+        <button class="btn-ghost">Ver torneos</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SELECTOR DE DISCIPLINA ============ -->
+<div class="disc-band">
+  <div class="disc-panel">
+    <h4 class="display">¿QUÉ QUIERES EXPLORAR?</h4>
+    <div class="disc-options">
+      <a href="index.html" class="disc-opt">FUTSAL</a>
+      <a href="futbol-de-salon.html" class="disc-opt is-active">FÚTBOL DE SALÓN</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ EN PORTADA ============ -->
+<section id="portada">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">LO ÚLTIMO</span>
+      <h2 class="display">EN PORTADA</h2>
+    </div>
+    <a href="noticias.html" class="sec-link">Ver todas las noticias →</a>
+  </div>
+  <div class="portada-grid">
+    <div class="portada-main">
+      <div class="news-img">
+        <span class="news-cat">CRÓNICA</span>
+        <img src="assets/img/court.svg" alt="">
+      </div>
+      <div class="news-body">
+        <div class="news-meta"><span>HOY · 08:12</span><span>COPA METROPOLITANA</span></div>
+        <h3 class="display">EL QUINTETO QUE REESCRIBIÓ LA FINAL EN EL MINUTO 40</h3>
+        <p>Un análisis táctico de cómo Pantera FS rompió el bloque defensivo de Halcones sobre la bocina para llevarse la Copa Metropolitana de Fútbol de Salón.</p>
+        <a href="#" class="news-more">Ver más →</a>
+      </div>
+    </div>
+    <div class="portada-side">
+      <div class="news-card">
+        <div class="news-img">
+          <span class="news-cat">FICHAJES</span>
+          <img src="assets/img/ball.svg" alt="">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span>AYER</span><span>MERCADO</span></div>
+          <h3 class="display">TITO SUÁREZ FIRMA CON RAYO NEGRO PARA LA LIGA URBANA</h3>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">
+          <span class="news-cat">CANTERA</span>
+          <img src="assets/img/jersey.svg" alt="">
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span>HACE 2 DÍAS</span><span>SUB-17</span></div>
+          <h3 class="display">LA GENERACIÓN QUE VIENE PISANDO FUERTE</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="gold-rule"></div></div>
+
+<!-- ============ WILLYZINHO DESTACA ============ -->
+<section id="destaca">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">JUGADORES</span>
+      <h2 class="display">WILLYZINHO DESTACA</h2>
+      <p>Los jugadores que están dejando huella.</p>
+    </div>
+    <a href="destacados.html" class="sec-link">Ver todos los destacados →</a>
+  </div>
+  <div class="destaca-panel">
+    <div class="destaca-photo">
+      <span class="destaca-badge">PLAYER OF THE MONTH</span>
+      <img src="assets/img/player-feature.svg" alt="Bruno Rojas, ala-pívot de Pantera FS">
+      <div class="name-tag">
+        <h3 class="display">BRUNO "PIVOT" ROJAS</h3>
+        <span>Pantera FS</span>
+      </div>
+    </div>
+    <div class="destaca-info">
+      <div class="tag">FICHA DEL JUGADOR</div>
+      <h4 class="display">UNA FECHA MÁS, OTRA VEZ DECISIVO</h4>
+      <div class="destaca-meta-row">
+        <div><b>Ala-Pívot</b><span>POSICIÓN</span></div>
+        <div><b>24 años</b><span>EDAD</span></div>
+        <div><b>1.78 m</b><span>ALTURA</span></div>
+        <div><b>#7</b><span>DORSAL</span></div>
+      </div>
+      <div class="destaca-stats">
+        <div class="destaca-stat"><b>12</b><span>GOLES</span></div>
+        <div class="destaca-stat"><b>8</b><span>ASISTENCIAS</span></div>
+        <div class="destaca-stat"><b>5</b><span>MVP</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-strip-head"><span>RANKING DE LA FECHA</span></div>
+  <div class="feat-strip">
+    <div class="feat-card">
+      <div class="feat-num">01</div>
+      <div class="feat-rank">MVP DE LA FECHA</div>
+      <div class="feat-avatar"><img src="assets/img/avatar.svg" alt=""></div>
+      <h4 class="display">BRUNO "PIVOT" ROJAS</h4>
+      <div class="role">Pantera FS · Ala-pívot</div>
+      <div class="feat-tags"><span>4 GOLES</span><span>2 ASIST.</span></div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-num">02</div>
+      <div class="feat-rank">MEJOR PORTERO</div>
+      <div class="feat-avatar"><img src="assets/img/avatar.svg" alt=""></div>
+      <h4 class="display">DANI "MURO" VEGA</h4>
+      <div class="role">Halcones · Portero</div>
+      <div class="feat-tags"><span>9 PARADAS</span></div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-num">03</div>
+      <div class="feat-rank">REVELACIÓN</div>
+      <div class="feat-avatar"><img src="assets/img/avatar.svg" alt=""></div>
+      <h4 class="display">MATEO SILVA</h4>
+      <div class="role">Rayo Negro · Cierre</div>
+      <div class="feat-tags"><span>SUB-19</span></div>
+    </div>
+  </div>
+</section>
+<section id="agenda" style="background:var(--black-coal);border-radius:12px;">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">CALENDARIO</span>
+      <h2 class="display">WILLYZINHO AGENDA</h2>
+    </div>
+    <a href="torneos.html" class="sec-link">Calendario completo →</a>
+  </div>
+  <div class="agenda-grid">
+    <div class="agenda-card">
+      <div class="agenda-top">
+        <h4 class="display">COPA METROPOLITANA DE FÚTBOL DE SALÓN</h4>
+        <span class="agenda-status status-curso">EN CURSO</span>
+      </div>
+      <div class="agenda-meta">
+        <div><span>UBICACIÓN</span><b>Cancha Norte, Bogotá</b></div>
+        <div><span>CATEGORÍA</span><b>Libre masculino</b></div>
+        <div><span>FECHAS</span><b>3 ago — 20 sep</b></div>
+        <div><span>EQUIPOS</span><b>16 equipos</b></div>
+      </div>
+      <div class="agenda-foot">
+        <div class="agenda-premio"><span>PREMIO</span><b>$6.000.000 COP</b></div>
+        <a href="torneos.html" class="agenda-link">Ver torneo →</a>
+      </div>
+    </div>
+    <div class="agenda-card">
+      <div class="agenda-top">
+        <h4 class="display">LIGA URBANA DE FÚTBOL DE SALÓN</h4>
+        <span class="agenda-status status-proximo">PRÓXIMO</span>
+      </div>
+      <div class="agenda-meta">
+        <div><span>UBICACIÓN</span><b>Coliseo El Salitre</b></div>
+        <div><span>CATEGORÍA</span><b>Libre mixto</b></div>
+        <div><span>FECHAS</span><b>4 oct — 15 dic</b></div>
+        <div><span>EQUIPOS</span><b>12 equipos</b></div>
+      </div>
+      <div class="agenda-foot">
+        <div class="agenda-premio"><span>PREMIO</span><b>$4.500.000 COP</b></div>
+        <a href="torneos.html" class="agenda-link">Ver torneo →</a>
+      </div>
+    </div>
+    <div class="agenda-card">
+      <div class="agenda-top">
+        <h4 class="display">COPA SUB-17</h4>
+        <span class="agenda-status status-proximo">PRÓXIMO</span>
+      </div>
+      <div class="agenda-meta">
+        <div><span>UBICACIÓN</span><b>Cancha Sur, Bogotá</b></div>
+        <div><span>CATEGORÍA</span><b>Sub-17</b></div>
+        <div><span>FECHAS</span><b>12 oct — 2 nov</b></div>
+        <div><span>EQUIPOS</span><b>8 equipos</b></div>
+      </div>
+      <div class="agenda-foot">
+        <div class="agenda-premio"><span>PREMIO</span><b>Trofeo + becas</b></div>
+        <a href="torneos.html" class="agenda-link">Ver torneo →</a>
+      </div>
+    </div>
+    <div class="agenda-card">
+      <div class="agenda-top">
+        <h4 class="display">TORNEO RELÁMPAGO NOCTURNO</h4>
+        <span class="agenda-status status-final">FINALIZADO</span>
+      </div>
+      <div class="agenda-meta">
+        <div><span>UBICACIÓN</span><b>Cancha Sur, Bogotá</b></div>
+        <div><span>CATEGORÍA</span><b>Libre masculino</b></div>
+        <div><span>FECHAS</span><b>14 jun — 28 jun</b></div>
+        <div><span>EQUIPOS</span><b>20 equipos</b></div>
+      </div>
+      <div class="agenda-foot">
+        <div class="agenda-premio"><span>CAMPEÓN</span><b>Fénix FS</b></div>
+        <a href="torneos.html" class="agenda-link">Ver torneo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WILLYZINHO DOCUMENTA ============ -->
+<section id="documenta">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">MULTIMEDIA</span>
+      <h2 class="display">WILLYZINHO DOCUMENTA</h2>
+    </div>
+    <a href="#" class="sec-link">Ver galería →</a>
+  </div>
+  <div class="doc-grid">
+    <div class="doc-card span-tall">
+      <span class="doc-format">STORY</span>
+      <img src="assets/img/trophy.svg" alt="">
+      <div class="doc-info">
+        <span>DENTRO DEL VESTUARIO</span>
+        <h5 class="display">LA NOCHE EN QUE PANTERA FS SE HIZO CAMPEÓN</h5>
+      </div>
+    </div>
+    <div class="doc-card">
+      <span class="doc-format">VIDEO</span>
+      <div class="doc-play">▶</div>
+      <img src="assets/img/goal.svg" alt="">
+      <div class="doc-info">
+        <span>02:14</span>
+        <h5 class="display">EL GOLAZO DESDE MEDIA CANCHA</h5>
+      </div>
+    </div>
+    <div class="doc-card">
+      <span class="doc-format">PHOTO</span>
+      <img src="assets/img/whistle.svg" alt="">
+      <div class="doc-info">
+        <span>32 FOTOS</span>
+        <h5 class="display">LA NOCHE DE LA FINAL</h5>
+      </div>
+    </div>
+    <div class="doc-card">
+      <span class="doc-format">MATCH</span>
+      <img src="assets/img/stadium.svg" alt="">
+      <div class="doc-info">
+        <span>EN VIVO</span>
+        <h5 class="display">RAYO NEGRO VS FÉNIX FS</h5>
+      </div>
+    </div>
+    <div class="doc-card">
+      <span class="doc-format">VIDEO</span>
+      <div class="doc-play">▶</div>
+      <img src="assets/img/medal.svg" alt="">
+      <div class="doc-info">
+        <span>04:37</span>
+        <h5 class="display">"EL FÚTBOL DE SALÓN SE GANA EN LA CABEZA"</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WILLYZINHO STATS ============ -->
+<div class="stats-band">
+  <div class="stats-grid">
+    <div class="stat-cell"><div class="stat-num display">12</div><div class="stat-label">GOLEADOR · B. ROJAS</div></div>
+    <div class="stat-cell"><div class="stat-num display">9</div><div class="stat-label">ASISTENCIAS · L. PAZ</div></div>
+    <div class="stat-cell"><div class="stat-num display">5</div><div class="stat-label">MVP DE LA TEMPORADA</div></div>
+    <div class="stat-cell"><div class="stat-num display">9</div><div class="stat-label">PARADAS · D. VEGA</div></div>
+    <div class="stat-cell"><div class="stat-num display">16</div><div class="stat-label">EQUIPOS DESTACADOS</div></div>
+    <div class="stat-cell"><div class="stat-num display">128</div><div class="stat-label">PARTIDOS JUGADOS</div></div>
+  </div>
+</div>
+
+<!-- ============ CTA ============ -->
+<section>
+  <div class="cta-panel">
+    <div class="num-mark display">07</div>
+    <div>
+      <h2 class="display">¿TIENES UNA HISTORIA DE FÚTBOL DE SALÓN?</h2>
+      <p>Comparte tu torneo, equipo, jugador o experiencia. Publicamos las mejores historias del fútbol de salón urbano.</p>
+    </div>
+    <button class="btn-gold">Contactarnos</button>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contacto">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <div class="brand-icon" style="height:28px;"><img src="assets/img/logo-wz7.png" alt="WillyzinhoZ7 logo"></div>
+      <div class="brand-sub">
+        <div class="name-row"><div class="brand-dot"></div><b>WILLYZINHO NEWS</b></div>
+        <span>FUTSAL · TORNEOS · JUGADORES · HISTORIAS</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+      <a href="#">X</a>
+    </div>
+    <div class="footer-copy">© 2026 WILLYZINHO NEWS</div>
+  </div>
+</footer>
+
+<script src="js/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+/* ============================================================
+   COMPONENTS.CSS
+   Piezas reutilizables de contenido: botones, tarjetas de
+   noticias, tarjetas de torneo, tarjetas de jugador (ranking),
+   tarjetas de multimedia, la franja de estadísticas, el panel
+   del jugador del mes, buscador y filtros, el reproductor de
+   "En Vivo", el formulario de contacto y los favoritos.
+   Este es el archivo más grande porque cada sección visual del
+   sitio vive aquí como una clase independiente y reutilizable.
+   ============================================================ */
+
+.btn-gold{
+    background:var(--gold);color:#080808;border:none;padding:15px 26px;
+    font-weight:800;font-size:13px;letter-spacing:0.03em;border-radius:4px;cursor:pointer;transition:.2s ease;
+  }
+
+.btn-gold:hover{background:var(--gold-bright);}
+
+.btn-ghost{
+    background:transparent;color:var(--white);border:1px solid var(--line-strong);
+    padding:15px 26px;font-weight:700;font-size:13px;letter-spacing:0.03em;border-radius:4px;
+    cursor:pointer;transition:.2s ease;
+  }
+
+.btn-ghost:hover{border-color:var(--white);}
+
+/* ---------- En portada ---------- */
+
+.portada-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;}
+
+.portada-main{
+    border-radius:6px;overflow:hidden;background:var(--black-coal);border:1px solid var(--line);
+    cursor:pointer;transition:.25s ease;
+  }
+
+.portada-main:hover{border-color:var(--gray-metal-dim);}
+
+.portada-main .news-img{aspect-ratio:16/11;}
+
+.portada-side{display:flex;flex-direction:column;gap:24px;}
+
+.news-card{
+    border-radius:6px;overflow:hidden;background:var(--black-coal);border:1px solid var(--line);
+    cursor:pointer;transition:.25s ease;flex:1;
+  }
+
+.news-card:hover{border-color:var(--gray-metal-dim);transform:translateY(-2px);}
+
+.news-img{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;}
+
+.news-img img{
+    width:100%;height:100%;object-fit:cover;
+    filter:grayscale(0.55) contrast(1.1) sepia(0.1);transition:.4s ease;
+  }
+
+.news-card:hover .news-img img{filter:grayscale(0.15) contrast(1.1) sepia(0.05);transform:scale(1.04);}
+
+.news-cat{
+    position:absolute;top:14px;left:14px;background:rgba(8,8,8,0.78);backdrop-filter:blur(6px);
+    border:1px solid rgba(245,245,245,0.2);color:var(--gold);font-size:10.5px;font-weight:800;
+    letter-spacing:0.07em;padding:5px 10px;border-radius:3px;
+  }
+
+.news-body{padding:18px 18px 22px;}
+
+.news-meta{display:flex;gap:8px;color:var(--gray-metal-dim);font-size:11.5px;font-weight:600;margin-bottom:8px;}
+
+.news-body h3{font-family:'Anton',sans-serif;font-weight:400;font-size:22px;line-height:1.14;}
+
+.portada-main .news-body h3{font-size:29px;}
+
+.news-body p{margin-top:10px;color:var(--gray-metal);font-size:13.5px;line-height:1.5;}
+
+.news-more{
+    display:inline-block;margin-top:14px;color:var(--gold);font-size:12.5px;font-weight:700;
+    text-decoration:none;border-bottom:1px solid transparent;
+  }
+
+.news-more:hover{border-color:var(--gold);}
+
+/* ---------- Willyzinho Destaca ---------- */
+
+.destaca-panel{
+    display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:var(--black-coal);
+    border:1px solid var(--line);border-radius:8px;overflow:hidden;
+  }
+
+.destaca-photo{position:relative;aspect-ratio:4/5;overflow:hidden;border-right:1px solid var(--line);}
+
+.destaca-photo img{
+    width:100%;height:100%;object-fit:cover;
+    filter:grayscale(0.4) contrast(1.15) sepia(0.12) brightness(0.85);
+  }
+
+.destaca-photo::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(0deg,rgba(8,8,8,0.88) 0%,transparent 45%);
+  }
+
+.destaca-badge{
+    position:absolute;top:18px;left:18px;background:var(--gold);color:#080808;
+    font-size:11px;font-weight:800;letter-spacing:0.06em;padding:6px 12px;border-radius:3px;
+  }
+
+.destaca-photo .name-tag{position:absolute;left:18px;bottom:18px;}
+
+.destaca-photo .name-tag h3{font-family:'Anton',sans-serif;font-size:26px;color:var(--white);}
+
+.destaca-photo .name-tag span{font-size:12.5px;color:var(--gray-metal);font-weight:600;}
+
+.destaca-info{padding:38px;display:flex;flex-direction:column;justify-content:center;}
+
+.destaca-info .tag{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:0.1em;margin-bottom:14px;}
+
+.destaca-info h4{font-family:'Anton',sans-serif;font-size:24px;margin-bottom:6px;}
+
+.destaca-meta-row{display:flex;gap:26px;margin:18px 0 26px;flex-wrap:wrap;}
+
+.destaca-meta-row div{display:flex;flex-direction:column;}
+
+.destaca-meta-row b{font-family:'Anton',sans-serif;font-size:18px;color:var(--white);}
+
+.destaca-meta-row span{font-size:10.5px;color:var(--gray-metal);letter-spacing:0.06em;font-weight:700;margin-top:2px;}
+
+.destaca-stats{display:flex;gap:0;border-top:1px solid var(--line);padding-top:22px;}
+
+.destaca-stat{flex:1;padding-right:20px;}
+
+.destaca-stat b{font-family:'Anton',sans-serif;font-size:34px;color:var(--gold);display:block;}
+
+.destaca-stat span{font-size:11px;color:var(--gray-metal);font-weight:700;letter-spacing:0.04em;}
+
+/* ---------- Ranking de la fecha (numbered feature cards) ---------- */
+
+.feat-strip-head{margin:40px 0 22px;}
+
+.feat-strip-head span{font-size:11.5px;font-weight:700;letter-spacing:0.1em;color:var(--gray-metal);}
+
+.feat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+
+.feat-card{
+    background:var(--black-coal);border:1px solid var(--line);border-radius:6px;
+    padding:22px;position:relative;overflow:hidden;transition:.25s ease;
+  }
+
+.feat-card:hover{border-color:var(--gold);}
+
+.feat-num{
+    position:absolute;right:8px;top:-6px;font-family:'Anton',sans-serif;font-size:92px;
+    color:rgba(245,245,245,0.07);line-height:1;pointer-events:none;
+  }
+
+.feat-rank{
+    display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:0.08em;
+    color:var(--black-deep);background:var(--white);padding:5px 10px;border-radius:3px;margin-bottom:18px;
+  }
+
+.feat-avatar{
+    width:58px;height:58px;border-radius:50%;overflow:hidden;
+    border:2px solid var(--line-strong);margin-bottom:14px;position:relative;z-index:1;
+  }
+
+.feat-avatar img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.6) contrast(1.05);}
+
+.feat-card h4{font-family:'Anton',sans-serif;font-weight:400;font-size:18px;position:relative;z-index:1;}
+
+.feat-card .role{color:var(--gray-metal);font-size:12px;font-weight:600;margin-top:3px;position:relative;z-index:1;}
+
+.feat-tags{display:flex;gap:8px;margin-top:16px;position:relative;z-index:1;}
+
+.feat-tags span{
+    font-size:10.5px;font-weight:700;letter-spacing:0.03em;color:var(--gray-metal);
+    border:1px solid var(--line-strong);padding:4px 8px;border-radius:3px;
+  }
+
+/* ---------- Willyzinho Agenda ---------- */
+
+.agenda-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+
+.agenda-card{
+    background:var(--black-coal);border:1px solid var(--line);border-radius:6px;padding:26px;
+    transition:.25s ease;
+  }
+
+.agenda-card:hover{border-color:var(--gold);}
+
+.agenda-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;}
+
+.agenda-top h4{font-family:'Anton',sans-serif;font-size:20px;font-weight:400;max-width:260px;}
+
+.agenda-status{
+    font-size:10.5px;font-weight:800;letter-spacing:0.05em;padding:6px 11px;border-radius:100px;white-space:nowrap;
+  }
+
+.status-curso{background:rgba(216,27,37,0.14);color:var(--gold-bright);border:1px solid rgba(216,27,37,0.4);}
+
+.status-proximo{background:rgba(245,245,245,0.06);color:var(--white);border:1px solid var(--line-strong);}
+
+.status-final{background:rgba(245,245,245,0.04);color:var(--gray-metal);border:1px solid var(--line);}
+
+.agenda-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;margin-bottom:20px;}
+
+.agenda-meta div{display:flex;flex-direction:column;}
+
+.agenda-meta span{font-size:10px;color:var(--gray-metal-dim);letter-spacing:0.06em;font-weight:700;margin-bottom:3px;}
+
+.agenda-meta b{font-size:13.5px;font-weight:600;}
+
+.agenda-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:18px;}
+
+.agenda-premio{display:flex;flex-direction:column;}
+
+.agenda-premio span{font-size:10px;color:var(--gray-metal-dim);letter-spacing:0.06em;font-weight:700;}
+
+.agenda-premio b{color:var(--gold);font-size:14px;}
+
+.agenda-link{color:var(--white);font-size:12px;font-weight:700;text-decoration:none;border-bottom:1px solid var(--line-strong);padding-bottom:2px;}
+
+.agenda-link:hover{color:var(--gold);border-color:var(--gold);}
+
+/* ---------- Willyzinho Documenta ---------- */
+
+.doc-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:18px;}
+
+.doc-card{
+    position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line);cursor:pointer;
+  }
+
+.doc-card.span-tall{grid-row:span 2;aspect-ratio:auto;}
+
+.doc-card:not(.span-tall){aspect-ratio:16/11;}
+
+.doc-card img{
+    width:100%;height:100%;object-fit:cover;
+    filter:grayscale(0.5) contrast(1.12) sepia(0.14) brightness(0.78);transition:.4s ease;
+  }
+
+.doc-card:hover img{filter:grayscale(0.1) contrast(1.1) sepia(0.05) brightness(0.9);transform:scale(1.05);}
+
+.doc-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(8,8,8,0.9) 100%);}
+
+.doc-format{
+    position:absolute;top:14px;left:14px;z-index:2;background:var(--gold);color:#080808;
+    font-size:10px;font-weight:800;letter-spacing:0.07em;padding:5px 9px;border-radius:3px;
+  }
+
+.doc-play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;
+    border-radius:50%;background:rgba(245,245,245,0.1);backdrop-filter:blur(8px);
+    border:1px solid rgba(245,245,245,0.35);display:flex;align-items:center;justify-content:center;
+    z-index:2;transition:.2s ease;color:var(--white);font-size:14px;
+  }
+
+.doc-card:hover .doc-play{background:var(--gold);border-color:var(--gold);color:#080808;}
+
+.doc-info{position:absolute;bottom:16px;left:16px;right:16px;z-index:2;}
+
+.doc-info h5{font-family:'Anton',sans-serif;font-weight:400;font-size:16px;line-height:1.2;}
+
+.doc-info span{font-size:11px;color:var(--gray-metal);font-weight:600;}
+
+/* ---------- Willyzinho Stats ---------- */
+
+.stats-band{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0;
+  }
+
+.stats-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);}
+
+.stat-cell{padding:34px 22px;border-right:1px solid var(--line);transition:.25s ease;}
+
+.stat-cell:last-child{border-right:none;}
+
+.stat-cell:hover{background:var(--black-coal);}
+
+.stat-num{font-family:'Anton',sans-serif;font-size:42px;line-height:1;color:var(--white);}
+
+.stat-cell:hover .stat-num{color:var(--gold);}
+
+.stat-label{margin-top:8px;font-size:11px;font-weight:700;letter-spacing:0.06em;color:var(--gray-metal);}
+
+/* ---------- CTA ---------- */
+
+.cta-panel{
+    background:linear-gradient(155deg,#141210 0%,#0a0908 100%);
+    border:1px solid var(--line);border-radius:10px;padding:64px;
+    display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;
+    position:relative;overflow:hidden;
+  }
+
+.cta-panel .num-mark{
+    position:absolute;right:20px;top:-30px;font-family:'Anton',sans-serif;font-size:220px;
+    color:transparent;-webkit-text-stroke:1.5px rgba(216,27,37,0.14);pointer-events:none;
+  }
+
+.cta-panel h2{font-family:'Anton',sans-serif;font-size:38px;max-width:460px;position:relative;z-index:1;}
+
+.cta-panel p{color:var(--gray-metal);margin-top:14px;font-size:14.5px;max-width:420px;position:relative;z-index:1;}
+
+.cta-panel .btn-gold{position:relative;z-index:1;}
+
+/* ---------- Search bar ---------- */
+
+.search-bar{
+    display:flex;align-items:center;gap:12px;background:var(--black-coal);
+    border:1px solid var(--line-strong);border-radius:6px;padding:15px 18px;
+    max-width:460px;margin-top:30px;position:relative;z-index:1;
+  }
+
+.search-bar svg{color:var(--gray-metal);flex-shrink:0;}
+
+.search-bar input{
+    flex:1;background:transparent;border:none;color:var(--white);
+    font-family:'Inter',sans-serif;font-size:13.5px;outline:none;
+  }
+
+.search-bar input::placeholder{color:var(--gray-metal-dim);}
+
+/* ---------- Filter pills ---------- */
+
+.filter-band{max-width:1280px;margin:0 auto;padding:32px 40px 0;}
+
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;}
+
+.filter-pill{
+    background:var(--black-coal);border:1px solid var(--line-strong);color:var(--gray-metal);
+    padding:10px 18px;border-radius:100px;font-size:11.5px;font-weight:700;letter-spacing:0.04em;
+    cursor:pointer;transition:.2s ease;
+  }
+
+.filter-pill.is-active{background:var(--gold);border-color:var(--gold);color:#0a0a0a;}
+
+.filter-pill:not(.is-active):hover{border-color:var(--gold);color:var(--white);}
+
+/* ---------- Noticias listing grid ---------- */
+
+.noticias-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+    max-width:1280px;margin:0 auto;padding:44px 40px 30px;
+  }
+
+.load-more-wrap{display:flex;justify-content:center;padding:20px 40px 90px;}
+
+/* ---------- Destacados category grid ---------- */
+
+.destacados-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+    max-width:1280px;margin:0 auto;padding:0 40px 90px;
+  }
+
+/* ---------- Torneos: full listing status filter ---------- */
+
+.agenda-grid{padding-top:6px;}
+
+/* ---------- Contacto page ---------- */
+
+.contact-grid{
+    display:grid;grid-template-columns:1fr 1.2fr;gap:56px;
+    max-width:1280px;margin:0 auto;padding:0 40px 90px;
+  }
+
+.contact-info h3{font-family:'Anton',sans-serif;font-size:24px;margin-bottom:16px;}
+
+.contact-info p{color:var(--gray-metal);font-size:14px;line-height:1.7;margin-bottom:30px;}
+
+.contact-detail{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
+
+.contact-detail .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:7px;flex-shrink:0;}
+
+.contact-detail b{display:block;font-size:13px;color:var(--white);font-weight:700;}
+
+.contact-detail span{font-size:12.5px;color:var(--gray-metal);}
+
+.contact-form-card{background:var(--black-coal);border:1px solid var(--line);border-radius:8px;padding:36px;}
+
+form{display:flex;flex-direction:column;gap:18px;}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+
+.field label{display:block;font-size:10.5px;font-weight:700;letter-spacing:0.07em;color:var(--gray-metal);margin-bottom:9px;}
+
+.field input,.field textarea{
+    width:100%;background:var(--black-deep);border:1px solid var(--line-strong);color:var(--white);
+    padding:14px 16px;border-radius:4px;font-family:'Inter',sans-serif;font-size:13.5px;outline:none;
+    transition:.2s ease;
+  }
+
+.field input:focus,.field textarea:focus{border-color:var(--gold);}
+
+.field textarea{resize:none;height:130px;}
+
+.field input::placeholder,.field textarea::placeholder{color:var(--gray-metal-dim);}
+
+.field-error{color:var(--gold-bright);font-size:11px;margin-top:7px;display:none;}
+
+.field.has-error input,.field.has-error textarea{border-color:var(--gold-bright);}
+
+.field.has-error .field-error{display:block;}
+
+.form-status{padding:16px 18px;border-radius:6px;font-size:13px;font-weight:600;margin-top:4px;display:none;}
+
+.form-status.success{display:block;background:rgba(216,27,37,0.14);border:1px solid rgba(216,27,37,0.4);color:var(--white);}
+
+/* ---------- Favoritos page ---------- */
+
+.fav-toggle{
+    position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;
+    background:rgba(8,8,8,0.75);border:1px solid rgba(245,245,245,0.25);color:var(--white);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;
+    transition:.2s ease;font-family:'Inter',sans-serif;
+  }
+
+.fav-toggle:hover{border-color:var(--gold);}
+
+.fav-toggle.is-fav{background:var(--gold);border-color:var(--gold);color:#0a0a0a;}
+
+.fav-empty{
+    text-align:center;padding:70px 20px;color:var(--gray-metal);border:1px dashed var(--line-strong);
+    border-radius:8px;max-width:1280px;margin:0 auto 90px;
+  }
+
+.fav-empty b{display:block;color:var(--white);font-family:'Anton',sans-serif;font-size:24px;margin-bottom:12px;font-weight:400;}
+
+.fav-empty a{color:var(--gold);font-weight:700;text-decoration:none;border-bottom:1px solid var(--gold);}
+
+/* ---------- En Vivo: featured live player ---------- */
+
+.live-hero{background:var(--black-coal);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:52px;}
+
+.live-player{position:relative;aspect-ratio:16/8;overflow:hidden;}
+
+.live-player img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.35) contrast(1.15) sepia(0.15) brightness(0.55);}
+
+.live-player::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,8,0.92) 0%,rgba(8,8,8,0.1) 42%,rgba(8,8,8,0.55) 100%);}
+
+.live-badge-row{position:absolute;top:20px;left:20px;z-index:2;display:flex;align-items:center;gap:10px;}
+
+.live-badge{display:flex;align-items:center;gap:7px;background:var(--gold);color:#0a0a0a;font-weight:800;font-size:12px;letter-spacing:0.06em;padding:7px 14px;border-radius:100px;}
+
+.live-badge .dot{width:7px;height:7px;border-radius:50%;background:#0a0a0a;animation:ticker-pulse 1.2s infinite;}
+
+.live-minute{background:rgba(8,8,8,0.75);border:1px solid rgba(245,245,245,0.25);color:var(--white);font-weight:700;font-size:12px;padding:7px 14px;border-radius:100px;}
+
+.live-viewers{position:absolute;top:20px;right:20px;z-index:2;display:flex;align-items:center;gap:8px;background:rgba(8,8,8,0.7);border:1px solid rgba(245,245,245,0.2);padding:7px 14px;border-radius:100px;font-size:12px;font-weight:700;color:var(--white);}
+
+.live-play-center{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;
+    background:rgba(245,245,245,0.12);backdrop-filter:blur(8px);border:1px solid rgba(245,245,245,0.4);
+    display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--white);z-index:2;cursor:pointer;transition:.2s ease;
+  }
+
+.live-play-center:hover{background:var(--gold);border-color:var(--gold);color:#0a0a0a;}
+
+.live-score-bar{position:absolute;bottom:22px;left:24px;right:24px;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+
+.live-teams{display:flex;align-items:center;gap:20px;}
+
+.live-team{display:flex;flex-direction:column;align-items:center;gap:7px;}
+
+.live-team .crest{
+    width:46px;height:46px;border-radius:50%;background:linear-gradient(160deg,var(--white),var(--gray-metal));
+    display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;color:#0a0a0a;font-size:13px;
+  }
+
+.live-team span{font-size:11px;font-weight:700;color:var(--white);letter-spacing:0.03em;}
+
+.live-score{font-family:'Anton',sans-serif;font-size:36px;color:var(--white);align-self:center;}
+
+.live-meta-bar{display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-top:1px solid var(--line);flex-wrap:wrap;gap:16px;}
+
+.live-meta-bar .comp{font-size:13px;color:var(--gray-metal);}
+
+.live-meta-bar .comp b{color:var(--white);}
+
+.live-meta-bar .btn-gold{padding:12px 24px;font-size:12.5px;}
+
+/* ---------- En Vivo: schedule list ---------- */
+
+.schedule-list{display:flex;flex-direction:column;}
+
+.schedule-row{
+    display:grid;grid-template-columns:90px 1fr auto 130px;align-items:center;gap:18px;
+    padding:20px 8px;border-bottom:1px solid var(--line);transition:.2s ease;
+  }
+
+.schedule-row:first-child{border-top:1px solid var(--line);}
+
+.schedule-row:hover{background:var(--black-coal);}
+
+.schedule-time{display:flex;flex-direction:column;}
+
+.schedule-time b{font-family:'Anton',sans-serif;font-size:18px;font-weight:400;}
+
+.schedule-time span{font-size:10px;color:var(--gray-metal-dim);letter-spacing:0.05em;font-weight:700;margin-top:2px;}
+
+.schedule-match{font-weight:700;font-size:14.5px;}
+
+.schedule-match span{display:block;font-size:12px;color:var(--gray-metal-dim);font-weight:500;margin-top:4px;}
+
+.schedule-comp{color:var(--gray-metal);font-size:12.5px;font-weight:600;}
+
+.schedule-remind{
+    background:transparent;border:1px solid var(--line-strong);color:var(--white);
+    padding:9px 16px;border-radius:100px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s ease;justify-self:end;
+  }
+
+.schedule-remind:hover{border-color:var(--gold);color:var(--gold);}
+
+.schedule-remind.is-set{background:var(--gold);border-color:var(--gold);color:#0a0a0a;}

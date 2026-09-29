@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgPF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="jerseyPF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b3b"/>
+      <stop offset="55%" stop-color="#d81b25"/>
+      <stop offset="100%" stop-color="#6e0000"/>
+    </linearGradient>
+    <radialGradient id="glowPF" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#d81b25" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#d81b25" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgPF)"/>
+  <rect width="400" height="500" fill="url(#glowPF)"/>
+  <g stroke="#ffffff" stroke-width="1.5" opacity="0.06">
+    <line x1="0" y1="420" x2="400" y2="420"/>
+    <circle cx="200" cy="420" r="70"/>
+  </g>
+  <circle cx="200" cy="185" r="58" fill="#2a2a2a"/>
+  <circle cx="200" cy="185" r="58" fill="none" stroke="#d81b25" stroke-width="3" opacity="0.8"/>
+  <path d="M110,470 L110,300 Q110,255 150,240 L172,258 L200,272 L228,258 L250,240 Q290,255 290,300 L290,470 Z"
+        fill="url(#jerseyPF)" stroke="#f5f5f5" stroke-width="2.5" stroke-opacity="0.5"/>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-weight="900" font-size="120" fill="#f5f5f5" text-anchor="middle" opacity="0.94">7</text>
+</svg>

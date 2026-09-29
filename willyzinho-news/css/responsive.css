@@ -1,0 +1,62 @@
+/* ============================================================
+   RESPONSIVE.CSS
+   Todos los ajustes para pantallas pequeñas (menos de 980px:
+   tablets y celulares) en un solo lugar. Se carga AL FINAL,
+   después de los demás CSS, para que sus reglas puedan
+   sobreescribir las de escritorio.
+   ============================================================ */
+
+@media(max-width:1300px){
+    nav,.discipline-toggle{display:none;}
+    .menu-btn{display:flex;}
+  }
+
+@media(max-width:980px){
+    .ticker-item{padding:0 18px;font-size:10px;}
+    .wrap,section,.header-inner,.footer-wrap{padding-left:22px;padding-right:22px;}
+    .hero{padding:22px 22px 0;}
+    .hero-mark{font-size:150px;}
+    .hero-media-full{aspect-ratio:4/5.2;}
+    .hero-overlay{padding:26px;}
+    .hero-overlay h1{font-size:40px;}
+    .hero-scoreboard{top:26px;right:26px;}
+    .hero-chips{position:static;justify-content:flex-start;margin-top:22px;}
+    .hero-actions{flex-wrap:wrap;}
+    .disc-band{padding:0 22px;margin-top:36px;}
+    .disc-panel{flex-direction:column;align-items:flex-start;}
+    section{padding:56px 22px;}
+    .sec-head{flex-direction:column;align-items:flex-start;gap:12px;}
+    .portada-grid{grid-template-columns:1fr;}
+    .destaca-panel{grid-template-columns:1fr;}
+    .agenda-grid{grid-template-columns:1fr;}
+    .doc-grid{grid-template-columns:1fr 1fr;}
+    .doc-card.span-tall{grid-row:span 1;aspect-ratio:16/11;}
+    .stats-grid{grid-template-columns:repeat(2,1fr);}
+    .stat-cell:nth-child(even){border-right:none;}
+    .cta-panel{padding:38px 26px;}
+    .cta-panel h2{font-size:28px;}
+    .footer-wrap{flex-direction:column;align-items:flex-start;}
+  }
+
+@media(max-width:980px){
+    .page-hero{padding:40px 22px 34px;}
+    .page-hero h1{font-size:36px;}
+    .page-hero-mark{font-size:120px;}
+    .filter-band{padding:26px 22px 0;}
+    .noticias-grid{grid-template-columns:1fr;padding:34px 22px 20px;}
+    .destacados-grid{grid-template-columns:1fr 1fr;padding:0 22px 60px;gap:16px;}
+    .contact-grid{grid-template-columns:1fr !important;padding:0 22px 60px !important;gap:34px !important;}
+    .contact-form-card{padding:26px !important;}
+    .form-row{grid-template-columns:1fr !important;}
+    .fav-grid-wrap{padding:0 22px 60px !important;}
+  }
+
+@media(max-width:980px){
+    .live-player{aspect-ratio:4/5;}
+    .live-score-bar{left:16px;right:16px;bottom:16px;}
+    .live-teams{gap:12px;}
+    .live-score{font-size:26px;}
+    .live-meta-bar{flex-direction:column;align-items:flex-start;}
+    .schedule-row{grid-template-columns:70px 1fr;row-gap:8px;}
+    .schedule-comp,.schedule-remind{grid-column:2;justify-self:start;}
+  }

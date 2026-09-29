@@ -1,0 +1,24 @@
+/* ============================================================
+   VARIABLES.CSS
+   Aquí viven TODOS los colores, y solo aquí.
+   Si mañana quieres cambiar el rojo por otro color, este es el
+   único archivo que necesitas tocar: todo el sitio usa var(--gold)
+   etc, así que el cambio se propaga solo.
+   ============================================================ */
+
+:root{
+    --black-deep:#080808;
+    --black-coal:#121212;
+    --gray-dark:#202020;
+    --gray-metal:#777777;
+    --gray-metal-dim:#4d4d4d;
+    --white:#f5f5f5;
+    --gold:#d81b25;
+    --gold-bright:#ff3b3b;
+    --gold-dim:rgba(216,27,37,0.14);
+    --silver:#b9b9b9;
+    --silver-bright:#e9e9e9;
+    --silver-dim:rgba(200,200,200,0.14);
+    --line:rgba(245,245,245,0.08);
+    --line-strong:rgba(245,245,245,0.16);
+  }

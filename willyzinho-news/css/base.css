@@ -1,0 +1,45 @@
+/* ============================================================
+   BASE.CSS
+   Reset del navegador + estilos base de <body>, tipografía
+   general y un puñado de clases de utilidad que se usan en
+   cualquier página (.display, .gold-text, .wrap, .gold-rule).
+   Se carga en TODAS las páginas, antes que los demás CSS.
+   ============================================================ */
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+    background:var(--black-deep);
+    color:var(--white);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+::selection{background:var(--gold);color:#080808;}
+
+img{display:block;}
+
+.display{
+    font-family:'Anton',sans-serif;
+    font-weight:400;
+    letter-spacing:0.01em;
+    line-height:0.92;
+  }
+
+.gold-text{
+    background:linear-gradient(180deg,#ffb3b3 0%,#ff3b3b 22%,#d81b25 45%,#7a0000 65%,#ff5a5a 85%,#b3121c 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px;}
+
+.gold-rule{
+    height:2px;width:100%;
+    background:linear-gradient(90deg,transparent 0%,rgba(216,27,37,0.65) 20%,var(--gold) 50%,rgba(216,27,37,0.65) 80%,transparent 100%);
+    opacity:0.7;
+  }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favoritos — WILLYZINHO NEWS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ TICKER EN VIVO ============ -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-live-dot"></span>EN VIVO · PANTERA FS 4 – 3 HALCONES <span class="muted">40' FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">COPA METROPOLITANA <span class="muted">· CUARTOS DE FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">PRÓXIMO PARTIDO <span class="muted">VIE 20:30 · RAYO NEGRO VS FÉNIX FS</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">FICHAJE <span class="muted">TITO SUÁREZ FIRMA CON RAYO NEGRO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">LIGA URBANA DE FUTSAL <span class="muted">· JORNADA 12 EN CURSO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item"><span class="ticker-live-dot"></span>EN VIVO · PANTERA FS 4 – 3 HALCONES <span class="muted">40' FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">COPA METROPOLITANA <span class="muted">· CUARTOS DE FINAL</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">PRÓXIMO PARTIDO <span class="muted">VIE 20:30 · RAYO NEGRO VS FÉNIX FS</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">FICHAJE <span class="muted">TITO SUÁREZ FIRMA CON RAYO NEGRO</span></span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">LIGA URBANA DE FUTSAL <span class="muted">· JORNADA 12 EN CURSO</span></span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-icon"><img src="assets/img/logo-wz7.png" alt="WillyzinhoZ7 logo"></div>
+      <div class="brand-sub">
+        <div class="name-row"><div class="brand-dot"></div><b>WILLYZINHO NEWS</b></div>
+        <span>FUTSAL · TORNEOS · JUGADORES · HISTORIAS</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="envivo.html">En Vivo</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="destacados.html">Destacados</a></li>
+        <li><a href="torneos.html">Torneos</a></li>
+        <li><a href="favoritos.html" class="active">Favoritos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="discipline-toggle">
+        <a href="index.html" class="disc-opt is-active">FUTSAL</a>
+        <a href="futbol-de-salon.html" class="disc-opt">FÚTBOL DE SALÓN</a>
+      </div>
+      <div class="icon-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="icon-btn menu-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="envivo.html">En Vivo</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="destacados.html">Destacados</a></li>
+    <li><a href="torneos.html">Torneos</a></li>
+    <li><a href="favoritos.html" class="active">Favoritos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <div class="mobile-nav-disc">
+    <a href="index.html" class="disc-opt is-active">FUTSAL</a>
+    <a href="futbol-de-salon.html" class="disc-opt">FÚTBOL DE SALÓN</a>
+  </div>
+</div>
+
+<!-- ============ PAGE HERO ============ -->
+<div class="page-hero">
+  <div class="page-hero-mark display">05</div>
+  <div class="kicker-row"><div class="bar"></div><span>TU CANCHA, TUS NOTICIAS</span></div>
+  <h1 class="display">MIS FAVORITOS</h1>
+  <p>Guarda las noticias que quieres volver a leer. Se quedan aquí, guardadas en este navegador, así cierres la página.</p>
+</div>
+
+<!-- ============ MIS FAVORITOS (dinámico) ============ -->
+<section id="mis-favoritos" style="padding-bottom:20px;">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">GUARDADAS</span>
+      <h2 class="display">MIS FAVORITOS</h2>
+    </div>
+  </div>
+  <div id="favEmpty" class="fav-empty">
+    <b>Todavía no tienes noticias guardadas</b>
+    Toca el ícono <strong>☆</strong> en cualquier noticia de abajo para guardarla aquí, o ve a <a href="noticias.html">Noticias</a> a explorar.
+  </div>
+  <div id="favGrid" class="noticias-grid" style="display:none;padding-top:0;"></div>
+</section>
+
+<div class="wrap"><div class="gold-rule"></div></div>
+
+<!-- ============ NOTICIAS RECIENTES (para marcar) ============ -->
+<section id="recientes">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">EXPLORAR</span>
+      <h2 class="display">NOTICIAS RECIENTES</h2>
+    </div>
+    <a href="noticias.html" class="sec-link">Ver todas las noticias →</a>
+  </div>
+  <div id="recentGrid" class="noticias-grid" style="padding-top:0;"></div>
+</section>
+<footer id="contacto">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <div class="brand-icon" style="height:28px;"><img src="assets/img/logo-wz7.png" alt="WillyzinhoZ7 logo"></div>
+      <div class="brand-sub">
+        <div class="name-row"><div class="brand-dot"></div><b>WILLYZINHO NEWS</b></div>
+        <span>FUTSAL · TORNEOS · JUGADORES · HISTORIAS</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+      <a href="#">X</a>
+    </div>
+    <div class="footer-copy">© 2026 WILLYZINHO NEWS</div>
+  </div>
+</footer>
+
+<script src="js/nav.js" defer></script>
+<script src="js/favoritos.js" defer></script>
+</body>
+</html>
