@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="beamL" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f5f5f5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d81b25" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d81b25" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgS)"/>
+  <polygon points="70,40 20,260 120,260" fill="url(#beamL)"/>
+  <polygon points="330,40 280,260 380,260" fill="url(#beamR)"/>
+  <rect x="65" y="30" width="10" height="18" fill="#e9e9e9"/>
+  <rect x="325" y="30" width="10" height="18" fill="#e9e9e9"/>
+  <line x1="70" y1="48" x2="70" y2="170" stroke="#8f8f8f" stroke-width="4"/>
+  <line x1="330" y1="48" x2="330" y2="170" stroke="#8f8f8f" stroke-width="4"/>
+  <path d="M20,255 Q200,205 380,255 L380,270 Q200,222 20,270 Z" fill="#191919" stroke="#3a3a3a" stroke-width="1"/>
+  <path d="M40,260 Q200,218 360,260" fill="none" stroke="#4d4d4d" stroke-width="1.5" opacity="0.7"/>
+</svg>

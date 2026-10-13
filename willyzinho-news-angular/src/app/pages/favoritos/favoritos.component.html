@@ -1,0 +1,23 @@
+<section class="wrap">
+  <span class="kicker">GUARDADAS</span>
+  <h1 class="display">MIS FAVORITOS</h1>
+  <p class="sub">Se guardan en este navegador (localStorage), así que aunque cierres y vuelvas a abrir, siguen aquí.</p>
+
+  <ng-container *ngIf="(favoritas$ | async) as lista">
+    <div class="grid-noticias" *ngIf="lista.length > 0; else vacio">
+      <wz-noticia-card
+        *ngFor="let n of lista; trackBy: trackById"
+        [noticia]="n"
+        [esFavorita]="true"
+        (favorito)="quitar($event)"
+      ></wz-noticia-card>
+    </div>
+  </ng-container>
+
+  <ng-template #vacio>
+    <div class="empty">
+      <b>Todavía no tienes noticias guardadas</b>
+      <p>Toca la estrella ☆ en cualquier noticia para guardarla aquí, o ve a <a routerLink="/noticias">Noticias</a> a explorar.</p>
+    </div>
+  </ng-template>
+</section>

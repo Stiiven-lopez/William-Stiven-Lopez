@@ -1,0 +1,33 @@
+<section class="wrap">
+  <span class="kicker">TODA LA ACTUALIDAD</span>
+  <h1 class="display">NOTICIAS</h1>
+
+  <!-- Binding de dos vías manual: (input) lee el valor, lo mandamos al componente -->
+  <input
+    type="text"
+    class="buscador"
+    placeholder="Buscar noticias..."
+    [value]="textoBusqueda"
+    (input)="onBuscar($any($event.target).value)"
+  >
+
+  <div class="filtros">
+    <button
+      *ngFor="let cat of categorias"
+      class="pill"
+      [class.is-active]="categoriaActiva === cat"
+      (click)="seleccionarCategoria(cat)"
+    >{{ cat === 'FUTBOL-SALON' ? 'FÚTBOL DE SALÓN' : cat }}</button>
+  </div>
+
+  <div class="grid-noticias" *ngIf="(noticiasFiltradas$ | async) as lista">
+    <wz-noticia-card
+      *ngFor="let n of lista; trackBy: trackById"
+      [noticia]="n"
+      [esFavorita]="favoritosSrv.esFavorita(n.id)"
+      (favorito)="onFavorito($event)"
+    ></wz-noticia-card>
+
+    <p *ngIf="lista.length === 0" class="vacio">No encontramos noticias con ese filtro.</p>
+  </div>
+</section>

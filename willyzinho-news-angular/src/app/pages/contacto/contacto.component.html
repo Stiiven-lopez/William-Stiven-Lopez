@@ -1,0 +1,42 @@
+<section class="wrap">
+  <span class="kicker">¿TIENES UNA HISTORIA DE FUTSAL?</span>
+  <h1 class="display">CONTACTO</h1>
+  <p class="sub">Cuéntanos sobre tu equipo, tu torneo local o esa jugada que nadie vio.</p>
+
+  <div class="form-card">
+    <form [formGroup]="form" (ngSubmit)="enviar()" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" formControlName="nombre" placeholder="Tu nombre">
+          <div class="field-error" *ngIf="f.nombre.invalid && f.nombre.touched">Este campo es obligatorio.</div>
+        </div>
+        <div class="field">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" type="text" formControlName="correo" placeholder="tucorreo@ejemplo.com">
+          <div class="field-error" *ngIf="f.correo.invalid && f.correo.touched">Ingresa un correo electrónico válido.</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="asunto">Asunto</label>
+        <input id="asunto" type="text" formControlName="asunto" placeholder="¿De qué quieres hablarnos?">
+        <div class="field-error" *ngIf="f.asunto.invalid && f.asunto.touched">Este campo es obligatorio.</div>
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" formControlName="mensaje" placeholder="Cuéntanos tu historia..."></textarea>
+        <div class="field-error" *ngIf="f.mensaje.invalid && f.mensaje.touched">
+          Escribe al menos 10 caracteres.
+        </div>
+      </div>
+
+      <button type="submit" class="btn-gold">Enviar mensaje</button>
+
+      <div class="form-status" *ngIf="enviado">
+        ¡Gracias! Tu mensaje fue enviado. Te responderemos pronto.
+      </div>
+    </form>
+  </div>
+</section>

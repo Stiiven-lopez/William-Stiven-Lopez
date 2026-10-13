@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="cupFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff5a5a"/>
+      <stop offset="50%" stop-color="#d81b25"/>
+      <stop offset="100%" stop-color="#6e0000"/>
+    </linearGradient>
+    <radialGradient id="glowT" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d81b25" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d81b25" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgT)"/>
+  <rect width="400" height="300" fill="url(#glowT)"/>
+  <g stroke="#f5f5f5" stroke-width="2" fill="url(#cupFill)" stroke-opacity="0.5">
+    <path d="M160,70 h80 v55 q0,45 -40,55 q-40,-10 -40,-55 Z"/>
+    <path d="M160,80 q-35,0 -35,30 q0,28 35,32" fill="none"/>
+    <path d="M240,80 q35,0 35,30 q0,28 -35,32" fill="none"/>
+  </g>
+  <rect x="185" y="180" width="30" height="30" fill="#b9b9b9" opacity="0.85"/>
+  <path d="M150,215 h100 l-10,20 h-80 Z" fill="#b9b9b9" opacity="0.85"/>
+  <rect x="155" y="235" width="90" height="12" rx="3" fill="#8f8f8f"/>
+</svg>

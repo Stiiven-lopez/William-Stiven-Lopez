@@ -1,0 +1,14 @@
+# Dependencias (se instalan con npm install, no se suben a git)
+/node_modules
+
+# Carpeta de compilación
+/dist
+/out-tsc
+/.angular/cache
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+*.log

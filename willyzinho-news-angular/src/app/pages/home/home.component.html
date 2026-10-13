@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">MEDIO OFICIAL DEL FUTSAL URBANO</span>
+    <h1 class="display">WILLYZINHO NEWS</h1>
+    <p>El futsal desde la cancha hasta la historia. Cobertura de torneos, jugadores
+      y equipos que están construyendo la cultura del fútbol de salón en Bogotá.</p>
+    <div class="hero-actions">
+      <a routerLink="/noticias" class="btn-gold">Explorar noticias</a>
+      <a routerLink="/contacto" class="btn-ghost">Contáctanos</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <div>
+      <span class="kicker">LO ÚLTIMO</span>
+      <h2 class="display">EN PORTADA</h2>
+    </div>
+    <a routerLink="/noticias" class="sec-link">Ver todas las noticias →</a>
+  </div>
+
+  <!-- *ngFor: por cada noticia del array, Angular "clona" este
+       componente y le pasa los datos con property binding ([noticia]).
+       trackBy evita que Angular redibuje tarjetas que no cambiaron. -->
+  <div class="grid-noticias" *ngIf="destacadas$ | async as destacadas; else cargando">
+    <wz-noticia-card
+      *ngFor="let n of destacadas; trackBy: trackById"
+      [noticia]="n"
+      [esFavorita]="favoritosSrv.esFavorita(n.id)"
+      (favorito)="onFavorito($event)"
+    ></wz-noticia-card>
+  </div>
+  <ng-template #cargando><p style="color:var(--gray-metal);">Cargando noticias...</p></ng-template>
+</section>
+
+<section class="wrap cta">
+  <h2 class="display">¿TIENES UNA HISTORIA DE FUTSAL?</h2>
+  <p>Comparte tu torneo, equipo, jugador o experiencia. Publicamos las mejores historias del futsal urbano.</p>
+  <a routerLink="/contacto" class="btn-gold">Contactarnos</a>
+</section>

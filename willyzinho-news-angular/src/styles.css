@@ -1,0 +1,74 @@
+/* ============================================================
+   STYLES.CSS — estilos globales de toda la app Angular.
+   Misma identidad de marca que la versión HTML/CSS/JS del
+   proyecto: negro, rojo y plateado, tipografía Anton + Inter.
+   ============================================================ */
+
+:root{
+  --black-deep:#080808;
+  --black-coal:#121212;
+  --gray-metal:#777777;
+  --gray-metal-dim:#4d4d4d;
+  --white:#f5f5f5;
+  --gold:#d81b25;
+  --gold-bright:#ff3b3b;
+  --gold-dim:rgba(216,27,37,0.14);
+  --silver:#b9b9b9;
+  --line:rgba(245,245,245,0.08);
+  --line-strong:rgba(245,245,245,0.16);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  background:var(--black-deep);
+  color:var(--white);
+  font-family:'Inter',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+
+.display{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:0.01em;line-height:1.05;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+.btn-gold{
+  background:var(--gold);color:#0a0a0a;border:none;padding:13px 24px;
+  font-weight:800;font-size:13px;letter-spacing:0.03em;border-radius:4px;cursor:pointer;
+  transition:.2s ease;text-decoration:none;display:inline-block;
+}
+.btn-gold:hover{background:var(--gold-bright);}
+.btn-gold[disabled]{opacity:.5;cursor:not-allowed;}
+
+.btn-ghost{
+  background:transparent;color:var(--white);border:1px solid var(--line-strong);
+  padding:13px 24px;font-weight:700;font-size:13px;border-radius:4px;cursor:pointer;
+  transition:.2s ease;text-decoration:none;display:inline-block;
+}
+.btn-ghost:hover{border-color:var(--white);}
+
+.kicker{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:0.1em;}
+
+.card{
+  background:var(--black-coal);border:1px solid var(--line);border-radius:6px;
+  overflow:hidden;transition:.2s ease;
+}
+.card:hover{border-color:var(--gold);}
+
+.field{margin-bottom:16px;}
+.field label{display:block;font-size:10.5px;font-weight:700;letter-spacing:0.07em;color:var(--gray-metal);margin-bottom:8px;}
+.field input,.field textarea,.field select{
+  width:100%;background:var(--black-deep);border:1px solid var(--line-strong);color:var(--white);
+  padding:13px 15px;border-radius:4px;font-family:'Inter',sans-serif;font-size:13.5px;outline:none;
+}
+.field input:focus,.field textarea:focus{border-color:var(--gold);}
+.field textarea{resize:vertical;min-height:90px;}
+.field-error{color:var(--gold-bright);font-size:11.5px;margin-top:6px;}
+
+.form-status{
+  margin-top:14px;padding:14px 16px;border-radius:6px;font-size:13px;
+  background:var(--gold-dim);border:1px solid rgba(216,27,37,0.4);color:var(--white);
+}
+
+h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;}

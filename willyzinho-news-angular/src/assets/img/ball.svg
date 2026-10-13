@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="ballShade" cx="38%" cy="34%" r="65%">
+      <stop offset="0%" stop-color="#f5f5f5"/>
+      <stop offset="55%" stop-color="#cfcfcf"/>
+      <stop offset="100%" stop-color="#8f8f8f"/>
+    </radialGradient>
+    <radialGradient id="floorGlow" cx="50%" cy="88%" r="40%">
+      <stop offset="0%" stop-color="#d81b25" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#d81b25" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgB)"/>
+  <ellipse cx="200" cy="255" rx="90" ry="14" fill="url(#floorGlow)"/>
+  <circle cx="200" cy="150" r="78" fill="url(#ballShade)"/>
+  <g fill="#141414">
+    <polygon points="200,105 224,122 214,150 186,150 176,122"/>
+    <polygon points="200,105 176,122 158,100 178,78 222,78 242,100 224,122"/>
+    <polygon points="186,150 160,158 148,190 176,212 200,196"/>
+    <polygon points="214,150 240,158 252,190 224,212 200,196"/>
+  </g>
+  <circle cx="200" cy="150" r="78" fill="none" stroke="#d81b25" stroke-width="3" opacity="0.85"/>
+</svg>

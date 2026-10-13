@@ -1,0 +1,152 @@
+[
+  {
+    "id": "n1",
+    "etiqueta": "CRÓNICA",
+    "categoria": "FUTSAL",
+    "fecha": "Hoy · 08:12",
+    "meta": "Copa Metropolitana",
+    "titulo": "EL QUINTETO QUE REESCRIBIÓ LA FINAL EN EL MINUTO 40",
+    "resumen": "Cómo Pantera FS rompió el bloque defensivo de Halcones sobre la bocina para llevarse el título.",
+    "contenido": [
+      "Con tres minutos por jugar y el marcador 2-2, Pantera FS decidió apostarlo todo: metió a su pívot como quinto jugador de campo y dejó el arco vacío durante casi noventa segundos. La jugada, arriesgada hasta para los propios jugadores, terminó en dos goles consecutivos de Bruno \"Pivot\" Rojas.",
+      "\"Lo habíamos ensayado toda la semana, pero nunca estás seguro de que vaya a salir hasta que lo ves en un partido de verdad\", contó el técnico de Pantera FS al final del encuentro. Halcones, por su parte, reclamó que el cuarto gol llegó con una falta previa no marcada.",
+      "Con este resultado, Pantera FS se corona campeón de la Copa Metropolitana de Futsal y clasifica directamente a la Liga Urbana de la próxima temporada."
+    ],
+    "imagen": "assets/img/court.svg"
+  },
+  {
+    "id": "n2",
+    "etiqueta": "FICHAJES",
+    "categoria": "JUGADORES",
+    "fecha": "Ayer",
+    "meta": "Mercado",
+    "titulo": "TITO SUÁREZ FIRMA CON RAYO NEGRO PARA LA LIGA URBANA",
+    "resumen": "El extremo llega procedente de Fénix FS con opción de renovación por dos temporadas.",
+    "contenido": [
+      "Rayo Negro confirmó la contratación de Tito Suárez, extremo de 23 años que venía de ser pieza clave en la mitad de cancha de Fénix FS durante las últimas dos temporadas.",
+      "\"Buscábamos a alguien con esa velocidad para las transiciones rápidas, y Tito es de lo mejor que hay en la liga urbana en ese perfil\", explicó el cuerpo técnico de Rayo Negro.",
+      "El contrato incluye una opción de renovación automática por dos temporadas adicionales si el equipo clasifica a semifinales."
+    ],
+    "imagen": "assets/img/ball.svg"
+  },
+  {
+    "id": "n3",
+    "etiqueta": "CANTERA",
+    "categoria": "JUGADORES",
+    "fecha": "Hace 2 días",
+    "meta": "Sub-17",
+    "titulo": "LA GENERACIÓN QUE VIENE PISANDO FUERTE",
+    "resumen": "Ocho juveniles de la Copa Sub-17 que ya suenan para dar el salto a Primera.",
+    "contenido": [
+      "La Copa Sub-17 de este año dejó una cosecha de jugadores que ya están en la mira de los clubes de la Liga Urbana. Ocho nombres se repiten en las conversaciones de los técnicos: velocidad, lectura de juego y, sobre todo, mucha hambre de jugar.",
+      "Varios equipos de la categoría libre ya han hecho acercamientos informales con algunos de estos jugadores, aunque las reglas del torneo impiden fichajes formales hasta que terminen su etapa juvenil.",
+      "Seguiremos de cerca a esta generación durante toda la temporada."
+    ],
+    "imagen": "assets/img/jersey.svg"
+  },
+  {
+    "id": "n4",
+    "etiqueta": "ÁRBITROS",
+    "categoria": "FUTSAL",
+    "fecha": "Hace 3 días",
+    "meta": "Reglamento",
+    "titulo": "NUEVOS CRITERIOS PARA LA DOBLE PENALIZACIÓN",
+    "resumen": "La comisión arbitral ajusta el protocolo de tarjetas acumuladas para la fase final.",
+    "contenido": [
+      "La comisión arbitral de la liga publicó un ajuste al reglamento que entra en vigencia desde la fase final de todos los torneos activos: a partir de ahora, la acumulación de faltas por equipo se reinicia en cada tiempo, no en todo el partido.",
+      "El cambio busca evitar que los equipos jueguen de forma más conservadora en el segundo tiempo solo por temor a la doble penalización acumulada desde el arranque del partido.",
+      "La medida ya fue socializada con los capitanes de los equipos que siguen en competencia."
+    ],
+    "imagen": "assets/img/trophy.svg"
+  },
+  {
+    "id": "n5",
+    "etiqueta": "ENTREVISTA",
+    "categoria": "JUGADORES",
+    "fecha": "Hace 4 días",
+    "meta": "Porteros",
+    "titulo": "\"EL FUTSAL SE GANA EN LA CABEZA\"",
+    "resumen": "Dani \"Muro\" Vega repasa su temporada como mejor portero de la Copa Metropolitana.",
+    "contenido": [
+      "Dani Vega, portero de Halcones y elegido mejor guardameta de la Copa Metropolitana, habló sobre lo que significa atajar en una cancha de 40 por 20 metros: \"Acá no tienes tiempo de pensar dos veces, todo pasa muy rápido. El futsal se gana en la cabeza antes que con las manos\".",
+      "Vega terminó el torneo con 9 atajadas decisivas y se perfila como una de las piezas clave de Halcones para la siguiente temporada.",
+      "Cuando le preguntamos por su rival más difícil, no dudó: \"Bruno Rojas. Ese tipo mete goles hasta dormido\"."
+    ],
+    "imagen": "assets/img/goal.svg"
+  },
+  {
+    "id": "n6",
+    "etiqueta": "RESULTADOS",
+    "categoria": "RESULTADOS",
+    "fecha": "Hace 5 días",
+    "meta": "Liga Urbana",
+    "titulo": "FÉNIX FS GOLEA Y SE ACERCA A LA CIMA",
+    "resumen": "Triplete de Leo \"Zurdo\" Paz en una noche redonda para el conjunto de El Salitre.",
+    "contenido": [
+      "Fénix FS no dio tregua en su visita al Coliseo El Salitre y se impuso con autoridad gracias a un triplete de Leo \"Zurdo\" Paz, quien ya suma 9 asistencias y ahora también se mete en la pelea por la bota de goleo.",
+      "Con este resultado, Fénix FS queda a solo dos puntos del líder de la Liga Urbana de Futsal, con un partido pendiente por jugar.",
+      "La próxima fecha, Fénix FS recibe justamente al líder del torneo en lo que promete ser el partido de la jornada."
+    ],
+    "imagen": "assets/img/whistle.svg"
+  },
+  {
+    "id": "n7",
+    "etiqueta": "TORNEOS",
+    "categoria": "TORNEOS",
+    "fecha": "Hace 6 días",
+    "meta": "Calendario",
+    "titulo": "SE ABRE LA INSCRIPCIÓN PARA LA LIGA URBANA 2027",
+    "resumen": "Doce cupos disponibles para equipos libres mixtos, con arranque en octubre.",
+    "contenido": [
+      "La organización de la Liga Urbana de Futsal confirmó la apertura de inscripciones para la edición 2027, con doce cupos disponibles para la categoría libre mixta.",
+      "Los equipos interesados tienen plazo hasta finales de septiembre para inscribirse, y deberán presentar la planilla completa de jugadores junto con el pago de la inscripción.",
+      "El sorteo de grupos se realizará la primera semana de octubre, y el arranque del torneo está previsto para mediados de ese mismo mes."
+    ],
+    "imagen": "assets/img/stadium.svg"
+  },
+  {
+    "id": "n8",
+    "etiqueta": "HISTORIAS",
+    "categoria": "HISTORIAS",
+    "fecha": "Hace 1 semana",
+    "meta": "Comunidad",
+    "titulo": "DE LA CANCHA DEL BARRIO A LA COPA METROPOLITANA",
+    "resumen": "La historia de Mateo Silva, revelación del torneo, contada por sus propios vecinos.",
+    "contenido": [
+      "Antes de ser la revelación de la Copa Metropolitana, Mateo Silva jugaba todas las tardes en la cancha sintética de su cuadra, la misma donde aprendió a driblar esquivando las grietas del piso.",
+      "Sus vecinos lo recuerdan como el niño que nunca quería dejar de jugar, incluso después de que se fuera la luz y la cancha quedara a oscuras. \"Jugaba por el sonido del balón\", cuenta uno de ellos entre risas.",
+      "Hoy, con 19 años, Mateo es titular de Rayo Negro y uno de los nombres más mencionados quienes siguen de cerca el futsal urbano de Bogotá."
+    ],
+    "imagen": "assets/img/medal.svg"
+  },
+  {
+    "id": "n9",
+    "etiqueta": "FICHAJES",
+    "categoria": "JUGADORES",
+    "fecha": "Hace 1 semana",
+    "meta": "Mercado",
+    "titulo": "KEVIN ORTIZ RENUEVA CON HALCONES HASTA 2028",
+    "resumen": "El pívot artillero asegura su continuidad tras ser clave en la fase de grupos.",
+    "contenido": [
+      "Halcones aseguró la continuidad de su pívot artillero Kevin Ortiz, quien extendió su contrato hasta el año 2028 después de una fase de grupos en la que fue pieza clave para la clasificación del equipo.",
+      "Ortiz suma 10 goles en lo que va de temporada y es, junto con Bruno Rojas, uno de los nombres que más se repiten en las conversaciones sobre el próximo MVP de la liga.",
+      "\"Aquí me siento en casa, y todavía siento que tengo mucho por ganar con este equipo\", comentó el jugador tras firmar la renovación."
+    ],
+    "imagen": "assets/img/court.svg"
+  },
+  {
+    "id": "n10",
+    "etiqueta": "FÚTBOL DE SALÓN",
+    "categoria": "FUTBOL-SALON",
+    "fecha": "Hace 2 semanas",
+    "meta": "Liga Femenina",
+    "titulo": "LA LIGA FEMENINA DE FÚTBOL DE SALÓN ABRE CONVOCATORIA",
+    "resumen": "Diez equipos confirmados para el arranque de la primera jornada en el Coliseo El Salitre.",
+    "contenido": [
+      "La Liga Femenina de Fútbol de Salón confirmó diez equipos inscritos para su primera jornada, que se jugará en el Coliseo El Salitre con entrada libre para el público.",
+      "La organización espera que este sea el primer paso para consolidar un calendario femenino permanente, similar al que ya existe en la rama masculina.",
+      "Las inscripciones para equipos adicionales siguen abiertas hasta que se complete el cupo de catorce equipos para la fase de grupos."
+    ],
+    "imagen": "assets/img/jersey.svg"
+  }
+]

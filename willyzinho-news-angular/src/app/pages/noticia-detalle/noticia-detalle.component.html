@@ -1,0 +1,31 @@
+<section class="wrap">
+  <!-- estado es null mientras carga (no se muestra nada), y luego trae la noticia o undefined -->
+  <ng-container *ngIf="estado$ | async as estado">
+    <ng-container *ngIf="estado.noticia as n; else noEncontrada">
+      <a routerLink="/noticias" class="volver">← Volver a Noticias</a>
+      <span class="tag">{{ n.etiqueta }}</span>
+      <h1 class="display">{{ n.titulo }}</h1>
+      <div class="meta"><span>{{ n.fecha }}</span><span>{{ n.meta }}</span></div>
+
+      <div class="imagen"><img [src]="n.imagen" [alt]="n.titulo"></div>
+
+      <div class="contenido">
+        <p *ngFor="let parrafo of n.contenido">{{ parrafo }}</p>
+      </div>
+
+      <div class="acciones">
+        <button class="btn-gold" (click)="toggleFavorito(n.id)">
+          {{ favoritosSrv.esFavorita(n.id) ? '★ Guardado en favoritos' : '♡ Guardar en favoritos' }}
+        </button>
+        <a routerLink="/contacto" class="btn-ghost">Contactar</a>
+      </div>
+    </ng-container>
+
+    <ng-template #noEncontrada>
+      <span class="kicker">AY, NO</span>
+      <h1 class="display" style="font-size:36px;margin:14px 0;">NO ENCONTRAMOS ESTA NOTICIA</h1>
+      <p style="color:var(--gray-metal);margin-bottom:22px;">Puede que haya sido eliminada o que el link esté mal escrito.</p>
+      <a routerLink="/noticias" class="btn-gold">← Volver a Noticias</a>
+    </ng-template>
+  </ng-container>
+</section>

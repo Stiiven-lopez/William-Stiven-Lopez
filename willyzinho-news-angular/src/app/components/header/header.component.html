@@ -1,0 +1,34 @@
+<header>
+  <div class="header-inner">
+    <a routerLink="/" class="brand">
+      <img src="assets/img/logo-wz7.png" alt="Willyzinho News" class="brand-logo">
+      <div class="brand-text">
+        <b>WILLYZINHO NEWS</b>
+        <span>FUTSAL · TORNEOS · JUGADORES · HISTORIAS</span>
+      </div>
+    </a>
+
+    <nav class="nav-desktop">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+      <a routerLink="/noticias" routerLinkActive="active">Noticias</a>
+      <a routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
+      <a routerLink="/contacto" routerLinkActive="active">Contacto</a>
+      <a routerLink="/administrar" routerLinkActive="active">Administrar</a>
+    </nav>
+
+    <!-- [class.is-open] es BINDING de propiedad: agrega la clase CSS
+         "is-open" solo cuando menuAbierto es true. El (click) es
+         BINDING de evento: llama a toggleMenu() del componente. -->
+    <button class="menu-btn" [class.is-open]="menuAbierto" (click)="toggleMenu()" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" *ngIf="menuAbierto" (click)="cerrarMenu()">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+    <a routerLink="/noticias" routerLinkActive="active">Noticias</a>
+    <a routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
+    <a routerLink="/contacto" routerLinkActive="active">Contacto</a>
+    <a routerLink="/administrar" routerLinkActive="active">Administrar</a>
+  </nav>
+</header>

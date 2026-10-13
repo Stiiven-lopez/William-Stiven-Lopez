@@ -1,0 +1,74 @@
+<section class="wrap">
+  <span class="kicker">PANEL CONCEPTUAL</span>
+  <h1 class="display">ADMINISTRAR NOTICIAS</h1>
+  <p class="sub">Mini CRUD: crea o elimina noticias. Se guardan en este navegador (localStorage), sobre la base de <code>assets/data/noticias.json</code>.</p>
+
+  <div class="admin-grid">
+    <div>
+      <h2>Nueva noticia</h2>
+      <div class="form-card">
+        <form [formGroup]="form" (ngSubmit)="publicar()" novalidate>
+          <div class="field">
+            <label for="titulo">Título</label>
+            <input id="titulo" type="text" formControlName="titulo" placeholder="EJ: PANTERA FS GANA EN EL ÚLTIMO MINUTO">
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="etiqueta">Etiqueta</label>
+              <input id="etiqueta" type="text" formControlName="etiqueta" placeholder="EJ: CRÓNICA">
+            </div>
+            <div class="field">
+              <label for="categoria">Categoría</label>
+              <select id="categoria" formControlName="categoria">
+                <option *ngFor="let c of categorias" [value]="c">{{ c === 'FUTBOL-SALON' ? 'Fútbol de Salón' : c }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="fecha">Fecha / momento</label>
+              <input id="fecha" type="text" formControlName="fecha" placeholder="EJ: Hoy · 10:00">
+            </div>
+            <div class="field">
+              <label for="meta">Torneo / sección</label>
+              <input id="meta" type="text" formControlName="meta">
+            </div>
+          </div>
+          <div class="field">
+            <label for="resumen">Resumen breve</label>
+            <textarea id="resumen" formControlName="resumen" style="min-height:60px;"></textarea>
+          </div>
+          <div class="field">
+            <label for="contenido">Contenido completo (un párrafo por línea)</label>
+            <textarea id="contenido" formControlName="contenido"></textarea>
+          </div>
+          <div class="field">
+            <label for="imagen">Ilustración</label>
+            <select id="imagen" formControlName="imagen">
+              <option *ngFor="let img of imagenesDisponibles" [value]="img.valor">{{ img.label }}</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-gold">Publicar noticia</button>
+          <div class="form-status" *ngIf="mensaje">{{ mensaje }}</div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2>Noticias actuales</h2>
+      <div class="admin-list">
+        <div class="admin-row" *ngFor="let n of lista">
+          <img [src]="n.imagen" [alt]="n.titulo">
+          <div>
+            <h5>{{ n.titulo }}</h5>
+            <span>{{ n.etiqueta }} · {{ n.fecha }}
+              <span class="badge" *ngIf="esPersonalizada(n.id)">CREADA POR TI</span>
+            </span>
+          </div>
+          <button class="del-btn" (click)="eliminar(n.id)">Eliminar</button>
+        </div>
+        <p *ngIf="lista.length === 0" style="color:var(--gray-metal);">No hay noticias — todas fueron eliminadas.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+section{padding:50px 0 80px;}
+h1{font-size:34px;margin:14px 0 10px;}
+.sub{color:var(--gray-metal);font-size:13.5px;margin-bottom:34px;max-width:620px;}
+h2{font-size:20px;margin-bottom:16px;}
+
+.admin-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;}
+.form-card{background:var(--black-coal);border:1px solid var(--line);border-radius:8px;padding:26px;}
+form{display:flex;flex-direction:column;gap:2px;}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+
+.admin-list{display:flex;flex-direction:column;gap:10px;}
+.admin-row{
+  display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:14px;
+  background:var(--black-coal);border:1px solid var(--line);border-radius:6px;padding:12px 14px;
+}
+.admin-row img{width:48px;height:48px;object-fit:cover;border-radius:4px;}
+.admin-row h5{font-family:'Anton',sans-serif;font-weight:400;font-size:14px;line-height:1.25;}
+.admin-row span{display:block;font-size:11px;color:var(--gray-metal-dim);margin-top:4px;}
+.badge{color:var(--gold);font-weight:700;}
+.del-btn{
+  background:transparent;border:1px solid var(--line-strong);color:var(--gray-metal);
+  padding:7px 13px;border-radius:100px;font-size:10.5px;font-weight:700;cursor:pointer;white-space:nowrap;
+}
+.del-btn:hover{border-color:var(--gold-bright);color:var(--gold-bright);}
+
+@media(max-width:860px){ .admin-grid{grid-template-columns:1fr;} }

@@ -1,0 +1,23 @@
+<a class="card" [routerLink]="['/noticias', noticia.id]">
+  <div class="img-wrap">
+    <span class="tag">{{ noticia.etiqueta }}</span>
+
+    <button
+      *ngIf="mostrarFavorito"
+      class="fav-btn"
+      [class.is-fav]="esFavorita"
+      (click)="onFavoritoClick($event)"
+      [title]="esFavorita ? 'Quitar de favoritos' : 'Guardar en favoritos'"
+    >{{ esFavorita ? '★' : '☆' }}</button>
+
+    <img [src]="noticia.imagen" [alt]="noticia.titulo">
+  </div>
+  <div class="body">
+    <div class="meta">
+      <span>{{ noticia.fecha }}</span>
+      <span>{{ noticia.meta }}</span>
+    </div>
+    <h3 class="display">{{ noticia.titulo }}</h3>
+    <p>{{ noticia.resumen }}</p>
+  </div>
+</a>
